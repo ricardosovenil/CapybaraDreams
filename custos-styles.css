@@ -1,0 +1,371 @@
+/* Estilos específicos para a tabela de custos */
+
+.custos-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.custos-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.custos-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* Resumo Executivo */
+.resumo-executivo {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.resumo-executivo h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resumo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.resumo-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.resumo-card:hover {
+    transform: translateY(-5px);
+}
+
+.resumo-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.resumo-card .valor {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+}
+
+.resumo-card p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+/* Categorias de Custo */
+.custo-categoria {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.custo-categoria h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 1rem;
+}
+
+/* Tabelas */
+.tabela-custos {
+    overflow-x: auto;
+}
+
+.tabela-custos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.tabela-custos th,
+.tabela-custos td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabela-custos th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.tabela-custos tr:hover {
+    background: #f8f9fa;
+}
+
+.tabela-custos .total-row {
+    background: #667eea;
+    color: white;
+    font-weight: 700;
+}
+
+.tabela-custos .total-row td {
+    border-bottom: none;
+}
+
+/* Projeção de Receita */
+.projecao-receita {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.projecao-receita h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.projecao-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projecao-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.projecao-card:hover {
+    transform: translateY(-5px);
+}
+
+.projecao-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.projecao-card .valor {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.projecao-card p {
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progresso {
+    height: 100%;
+    background: #ffd700;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+/* Viabilidade */
+.viabilidade {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.viabilidade h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.viabilidade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.viabilidade-item {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.viabilidade-item:hover {
+    transform: translateY(-5px);
+}
+
+.viabilidade-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.valor-grande {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+}
+
+.viabilidade-item p {
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+/* Observações */
+.observacoes {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.observacoes h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.observacoes-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.observacao-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.observacao-item i {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-top: 0.25rem;
+}
+
+.observacao-item h4 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.observacao-item p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .custos-section h1 {
+        font-size: 2rem;
+    }
+    
+    .resumo-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .projecao-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .viabilidade-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabela-custos {
+        font-size: 0.9rem;
+    }
+    
+    .tabela-custos th,
+    .tabela-custos td {
+        padding: 0.75rem 0.5rem;
+    }
+    
+    .observacao-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .observacao-item i {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .custos-section {
+        padding: 100px 0 60px;
+    }
+    
+    .custo-categoria,
+    .resumo-executivo,
+    .projecao-receita,
+    .viabilidade,
+    .observacoes {
+        padding: 1.5rem;
+    }
+    
+    .resumo-card,
+    .projecao-card,
+    .viabilidade-item {
+        padding: 1.5rem;
+    }
+    
+    .valor-grande {
+        font-size: 2rem;
+    }
+    
+    .resumo-card .valor,
+    .projecao-card .valor {
+        font-size: 2rem;
+    }
+}

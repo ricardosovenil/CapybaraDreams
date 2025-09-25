@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual - CapybaraDreams</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loja-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <i class="fas fa-paw"></i>
+                <span>CapybaraDreams</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#products" class="active">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-actions">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Loja Virtual -->
+    <section class="loja-virtual">
+        <div class="container">
+            <h1>Loja Virtual CapybaraDreams</h1>
+            <p class="loja-subtitle">Descubra nossa coleção exclusiva de produtos inspirados em capivaras</p>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="roupas">Roupas</button>
+                <button class="filter-btn" data-category="acessorios">Acessórios</button>
+                <button class="filter-btn" data-category="decoracao">Decoração</button>
+            </div>
+
+            <!-- Grid de Produtos -->
+            <div class="produtos-grid">
+                <!-- Produto 1 -->
+                <div class="produto-card" data-category="roupas">
+                    <div class="produto-imagem">
+                        <i class="fas fa-tshirt"></i>
+                        <div class="produto-badge">Mais Vendido</div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Camiseta "Capybara Life"</h3>
+                        <p class="produto-descricao">Camiseta 100% algodão com estampa exclusiva de capivara relaxando</p>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 69,90</span>
+                            <span class="preco-promocao">R$ 49,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(127 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="camiseta-capybara-life">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="produto-card" data-category="acessorios">
+                    <div class="produto-imagem">
+                        <i class="fas fa-mug-hot"></i>
+                        <div class="produto-badge">Novidade</div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Caneca Relaxing Capybara</h3>
+                        <p class="produto-descricao">Caneca de porcelana com design fofo de capivara tomando banho</p>
+                        <div class="produto-preco">
+                            <span class="preco-promocao">R$ 29,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(89 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="caneca-relaxing">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="produto-card" data-category="acessorios">
+                    <div class="produto-imagem">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Chaveiro Fofura</h3>
+                        <p class="produto-descricao">Chaveiro de pelúcia macia com formato de capivara</p>
+                        <div class="produto-preco">
+                            <span class="preco-promocao">R$ 15,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(203 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="chaveiro-fofura">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="produto-card" data-category="decoracao">
+                    <div class="produto-imagem">
+                        <i class="fas fa-pillow"></i>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Almofada Capybara</h3>
+                        <p class="produto-descricao">Almofada decorativa 40x40cm com estampa de capivara</p>
+                        <div class="produto-preco">
+                            <span class="preco-promocao">R$ 79,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(156 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="almofada-capybara">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 5 -->
+                <div class="produto-card" data-category="roupas">
+                    <div class="produto-imagem">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Moletom "Capybara Squad"</h3>
+                        <p class="produto-descricao">Moletom com capuz, ideal para dias frios</p>
+                        <div class="produto-preco">
+                            <span class="preco-promocao">R$ 89,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span>(94 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="moletom-squad">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 6 -->
+                <div class="produto-card" data-category="acessorios">
+                    <div class="produto-imagem">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Pulseira Capybara</h3>
+                        <p class="produto-descricao">Pulseira de silicone com charm de capivara</p>
+                        <div class="produto-preco">
+                            <span class="preco-promocao">R$ 24,90</span>
+                        </div>
+                        <div class="produto-avaliacao">
+                            <div class="estrelas">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span>(67 avaliações)</span>
+                        </div>
+                        <button class="btn-comprar" data-produto="pulseira-capybara">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal do Carrinho -->
+    <div id="carrinho-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="carrinho-itens"></div>
+                <div class="carrinho-total">
+                    <h3>Total: R$ <span id="total-carrinho">0,00</span></h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Finalização -->
+    <div id="finalizacao-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-credit-card"></i> Finalizar Compra</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="formulario-compra">
+                    <div class="form-group">
+                        <label>Nome Completo:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone:</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Endereço:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Forma de Pagamento:</label>
+                        <select required>
+                            <option value="">Selecione...</option>
+                            <option value="pix">PIX</option>
+                            <option value="cartao">Cartão de Crédito</option>
+                            <option value="boleto">Boleto Bancário</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-confirmar-compra">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="loja-script.js"></script>
+</body>
+</html>
